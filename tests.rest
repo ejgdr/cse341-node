@@ -8,3 +8,8 @@ GET http://localhost:3000/contacts
 // where an id matches the id from a query parameter.
 GET http://localhost:3000/contacts/626b51e8713c9a3e7dc5159d
 ###
+// GET requests for Heroku with all contacts
+GET https://cse341node-ejgdr.herokuapp.com/contacts
+###
+GET https://cse341node-ejgdr.herokuapp.com/contacts/626b5c76713c9a3e7dc515a0
+
