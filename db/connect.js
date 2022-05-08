@@ -5,21 +5,20 @@ dotenv.config();
 //database
 const MongoClient = require('mongodb').MongoClient;
 
-let _client;
+// let _client;
 let _collection;
 
 const initDatabase = () => {
-    MongoClient.connect(process.env.MONGODB_URI, (err, client) =>{
-        if (err) throw err;
-        _client = client;
-        _collection = client.db("contacts").collection("contacts");
-        console.log("DB Connected Successfully");
-    });    
+  MongoClient.connect(process.env.MONGODB_URI, (err, client) => {
+    if (err) throw err;
+    // _client = client;
+    _collection = client.db('contacts').collection('contacts');
+    console.log('DB Connected Successfully');
+  });
 };
 
 const getCollection = () => {
-    return _collection;
+  return _collection;
 };
 
-
-module.exports = { initDatabase, getCollection};
+module.exports = { initDatabase, getCollection };
