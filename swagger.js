@@ -5,8 +5,8 @@ const doc = {
     title: 'My Contacts API',
     description: 'First project for CSE 341 - BYU Idaho',
   },
-  host: 'localhost:3000',
-  schemes: ['http'],
+  host: 'cse341node-ejgdr.herokuapp.com',
+  schemes: ['https'],
 };
 
 const outputFile = './swagger.json';

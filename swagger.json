@@ -5,12 +5,19 @@
     "description": "First project for CSE 341 - BYU Idaho",
     "version": "1.0.0"
   },
-  "host": "localhost:3000",
+  "host": "cse341node-ejgdr.herokuapp.com",
   "basePath": "/",
   "schemes": [
-    "http"
+    "https"
   ],
   "paths": {
+    "/api-docs": {
+      "get": {
+        "description": "",
+        "parameters": [],
+        "responses": {}
+      }
+    },
     "/": {
       "get": {
         "description": "",
